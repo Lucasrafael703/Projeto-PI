@@ -1,24 +1,43 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'Index/css/index.css' %}">
     <title>UNIDOE</title>
 </head>
-<header>
-    <nav>
-        <ul>
-            <li>Quem somos</li>
-            <li>Objetivos</li>
-            <li>Pontos de doação</li>
-            <li>Desenvolvedores</li>
-            <li>Doar</li>
-            <li>Login</li>
-        </ul>
-    </nav>
-</header>
+
 <body>
-    <h1>ARRECADAÇÃO DE VESTUÁRIO DOS ALUNOS UNIVESP</h1>
-    <p>Os alunos da UNIVESP ajudaram a arrecadar peças de vestuário, obrigado pela sua ajuda</p>
-</body>
+    <header>
+        <div id="title">
+            <h1>Campanha do</h1>
+            <h1>Agasalho</h1>
+        </div>
+        <nav>
+            <ul>
+                <a href="#"><li>Quem somos</li></a>
+                <a href="#"><li>Objetivos</li></a>
+                <a href="#"><li>Pontos de doação</li></a>
+                <a href="#"><li>Desenvolvedores</li></a>
+                <a href="#"><li>Doar</li></a>
+                <a href="#"><li>Login</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <h1>Sua ajuda pode</h1>
+            <h1>Aquecer alguém</h1>
+            <p>Os alunos da UNIVESP ajudaram a arrecadar {{ soma_quantidade }} peças de vestuário, obrigado pela sua ajuda</p>
+            <form>
+                <input type="submit" value="Doar">
+            </form>
+        </aside>
+        <article>
+            <img src="{% static 'Index/img/Pedreira-SP.png' %}" alt="Pedreira">
+        </article>
+    </main>
+   </body>
 </html>
