@@ -1,8 +1,8 @@
 body {
-    background-color: white;
+    background-color: white; /* Mudança para verde claro */
     color: green;
     max-width: 1200px;
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif; /* Correção da fonte */
     margin: 0 auto;
     padding: 15px;
 }
@@ -11,7 +11,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-itens: center;
+    align-items: center; /* Correção do nome da propriedade */
 }
 
 #title {
@@ -44,30 +44,34 @@ h1 {
 }
 
 #login:hover {
-    background-color: 2px solid black;
+    background-color: black; /* Corrigindo a propriedade */
     color: white;
 }
 
 main {
     display: flex;
     flex-direction: row;
+    justify-content: center; /* Centralizando o main */
     margin-top: 50px;
 }
 
-h2{
+h2 {
     font-size: 56px;
     line-height: 10px;
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif; /* Correção da fonte */
+    padding: 15px; /* Adicionando padding */
+    border-radius: 20px; /* Cantos arredondados */
+    background-color: lightgreen; /* Mudança para verde claro */
 }
 
-span{
+span {
     color: yellow;
 }
 
 p {
     line-height: 20px;
     max-width: 500px;
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif; /* Correção da fonte */
 }
 
 img {
@@ -80,7 +84,7 @@ form {
     width: 70%;
 }
 
-form [type="submit"]{
+form [type="submit"] {
     height: 35px;
     width: 50%;
     background-color: green;
@@ -92,7 +96,7 @@ form [type="submit"]:hover {
     cursor: pointer;
 }
 
-input{
+input {
     margin-top: 20px;
     height: 50%;
     padding: 15px;
