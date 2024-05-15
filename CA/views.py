@@ -7,4 +7,6 @@ def soma_quantidade_arrecadacao(request):
     soma = Arrecadacao.objects.aggregate(soma_quantidade=Sum('quantidade'))['soma_quantidade']
     context = {'soma_quantidade': soma}
     return render(request, 'index.html', context)
+def pontos(request):
+    return render(request, "pontos.html")
 
