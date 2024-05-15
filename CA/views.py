@@ -6,10 +6,5 @@ def soma_quantidade_arrecadacao(request):
     # Calcula a soma da quantidade de arrecadação
     soma = Arrecadacao.objects.aggregate(soma_quantidade=Sum('quantidade'))['soma_quantidade']
     context = {'soma_quantidade': soma}
-    return render(request, 'soma_quantidade_arrecadacao.html', context)
-
-def soma(request):
-    # Calcula a soma da quantidade de arrecadação
-    soma = Arrecadacao.objects.aggregate(soma_quantidade=Sum('quantidade'))['soma_quantidade']
-    context = {'soma_quantidade': soma}
     return render(request, 'index.html', context)
+
