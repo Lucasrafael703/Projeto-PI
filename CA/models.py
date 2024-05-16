@@ -51,12 +51,21 @@ class Tamanho(Base):
     def __str__(self):
         return self.size
 
+class Genero(Base):
+    gender = models.CharField(max_length=1)
+
+    class Meta:
+        verbose_name = 'genero'
+        verbose_name_plural = 'generos'
+
+    def __str__(self):
+        return self.gender
 
 class Arrecadacao(Base):
     arrecadador = models.ForeignKey(Arrecadador, related_name='arrecadacoes', on_delete=models.CASCADE)
     vestuario = models.ForeignKey(Vestuario, related_name='arrecadacoes', on_delete=models.CASCADE)
     tamanho = models.ForeignKey(Tamanho, related_name='tamanhos', on_delete=models.CASCADE)
-    genero = models.CharField(max_length=1)
+    genero = models.ForeignKey(Genero, related_name='generos', on_delete=models.CASCADE)
     quantidade = models.IntegerField(validators=[MaxValueValidator(999)])
 
     class Meta:

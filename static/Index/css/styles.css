@@ -15,6 +15,7 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
+    background-color: #85c394;
 }
 
 header {

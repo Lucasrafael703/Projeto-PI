@@ -1,14 +1,37 @@
-<!doctype html>
-<html lang="en">
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos de Arrecadação</title>
+    <link rel="stylesheet" href="{% static 'Index/css/styles.css' %}">
 </head>
 <body>
-    <h1>Pontos de coleta</h1>
+    <header>
+        <div class="container">
+            <h1>Pontos de Arrecadação</h1>
+            <a href="{% url 'soma_arrecadacao' %}"><button class="btn-login">Voltar</button></a>
+        </div>
+    </header>
 
+    <div class="container">
+        <section class="address-info">
+            <h2>Endereços dos Pontos de Arrecadação</h2>
+            <ul>
+                <li>Rua A, Número 123</li>
+                <li>Avenida B, Número 456</li>
+                <li>Praça C, Número 789</li>
+                <!-- Adicione mais endereços conforme necessário -->
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>DRP04-PJI110-SALA-002GRUPO-011</p>
+        </div>
+    </footer>
 </body>
 </html>

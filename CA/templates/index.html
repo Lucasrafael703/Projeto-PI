@@ -12,7 +12,7 @@
     <header>
         <div class="container">
             <h1>Campanha de Arrecadação de vestuário</h1>
-            <button class="btn-login">Login</button>
+            <a href="{% url 'admin:index' %}"><button class="btn-login">Login</button></a>
         </div>
     </header>
 
@@ -22,13 +22,13 @@
             <p>Essa é quantidade de roupas doadas até o momento</p>
             <p>Para contribuir você pode ir até um de nossos pontos de coleta</p>
             <p>Para saber mais clique em doar </p>
-            <button class="btn-donate">Doar</button>
+            <a href="{% url 'pontos' %}"><button class="btn-donate">Doar</button></a>
         </section>
     </div>
 
     <footer>
         <div class="container">
-            <p>PI UNIVESP</p>
+            <p>DRP04-PJI110-SALA-002GRUPO-011</p>
         </div>
     </footer>
 </body>
