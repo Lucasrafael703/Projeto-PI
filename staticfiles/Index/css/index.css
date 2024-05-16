@@ -1,0 +1,105 @@
+body {
+    background-color: white; /* Mudança para verde claro */
+    color: green;
+    max-width: 1200px;
+    font-family: 'Roboto', sans-serif; /* Correção da fonte */
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Correção do nome da propriedade */
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: white;
+    transition: 0.3s all;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+#login {
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#login:hover {
+    background-color: black; /* Corrigindo a propriedade */
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centralizando o main */
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 10px;
+    font-family: 'Roboto', sans-serif; /* Correção da fonte */
+    padding: 15px; /* Adicionando padding */
+    border-radius: 20px; /* Cantos arredondados */
+    background-color: lightgreen; /* Mudança para verde claro */
+}
+
+span {
+    color: yellow;
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+    font-family: 'Roboto', sans-serif; /* Correção da fonte */
+}
+
+img {
+    width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"] {
+    height: 35px;
+    width: 50%;
+    background-color: green;
+    color: black;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+input {
+    margin-top: 20px;
+    height: 50%;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+}
