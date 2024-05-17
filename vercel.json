@@ -10,14 +10,14 @@
       }
     },
     {
-      "src": "PI/staticfiles/staticfiles_build/",
+      "src": "staticfiles/",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "PI/staticfiles/staticfiles_build/$1"
+      "dest": "staticfiles/$1",
     },
     {
       "src": "/(.*)",
