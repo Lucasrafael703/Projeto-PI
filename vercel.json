@@ -10,7 +10,11 @@
       }
     },
     {
-      "src": "/staticfiles/",
+      "src": "requirements.txt",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "staticfiles/staticfiles_build",
       "use": "@vercel/static"
     }
   ],
